@@ -1,0 +1,201 @@
+#menu {
+    background: #ffffff;
+    height: 100%;
+    right: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    transition: all 0.7s ease-in-out;
+    visibility: hidden;
+    width: 60%;
+    z-index: 1100;
+  }
+  #menu.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .toggle-menu {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    float: right;
+    height: 50px;
+    outline: none;
+    padding: 0;
+    pointer-events: initial;
+    position: relative;
+    vertical-align: middle;
+    width: 50px;
+    z-index: 1110;
+  }
+  .toggle-menu span {
+    background-color: #164169;
+    content: "";
+    display: block;
+    height: 2px;
+    left: calc(50% - 13px );
+    position: absolute;
+    top: calc(50% - 1px );
+    transform-origin: 50% 50%;
+    transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out, transform 0.2s linear;
+    width: 26px;
+  }
+  .toggle-menu span:before, .toggle-menu span:after {
+    background-color: #164169;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    transform-origin: 50% 50%;
+    transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out, transform 0.2s linear;
+    width: 26px;
+  }
+  .toggle-menu span:before {
+    top: 7px;
+  }
+  .toggle-menu span:after {
+    top: -7px;
+  }
+  .toggle-menu.active span {
+    background-color: transparent;
+    transition: background 0.2s ease-out;
+  }
+  .toggle-menu.active span:before, .toggle-menu.active span:after {
+    transition: top 0.2s ease-out, transform 0.2s 0.2s ease-out;
+  }
+  .toggle-menu.active span:before {
+    top: 0;
+    transform: rotate3d(0, 0, 1, -45deg);
+  }
+  .toggle-menu.active span:after {
+    top: 0;
+    transform: rotate3d(0, 0, 1, 45deg);
+  }
+
+  .links {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  .links a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .links li {
+    font-size: 4vw;
+    margin-bottom: 5vh;
+  }
+
+  .links li button {
+        background-color: #164169;
+        border: none;
+        color: #ffffff;
+        border-radius: 10px;
+        padding: 2vh 2vw;
+        font-size: 4vw;
+        cursor: pointer;
+  }
+
+  .links li button:hover {
+    background-color: #00213f;
+  }
+
+  .links li a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 1250px) {
+    .toggle-menu {
+        display: inline-block;
+    }
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 25vw;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size:calc(10px + 8 * (100vw - 320px) / 880);
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.str h3 {
+    font-size:calc(10px + 8 * (100vw - 320px) / 880);
+}
+
+.str {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3vw;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 35vw;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+@media (max-width:570px) {
+  .dropdown-content2 {
+    width: 50vw;
+  }
+}
+
+.dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: calc(10px + 6 * (100vw - 320px) / 880);
+}
+
+.dropdown2 a:hover {background-color: #ddd;}
+
+.show2 {display: block;}
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="slider-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a href="#"><img src="/assets/logo.svg" alt="logo" /></a>
+      <nav>
+        <ul>
+          <li><a href="#">Все туры</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Контакты</a></li>
+          <div class="dropdown">
+            <li onclick="myFunction()" class="dropbtn">Позвонить</li>
+              <div id="myDropdown" class="dropdown-content">
+                <div class="cont">
+                  <div class="lef">
+                    <h3>г.Астана</h3>
+                    <h3>г.Алматы</h3>
+                    <h3>г.Костанай</h3>
+                    <h3>г.Рудный</h3>
+                  </div>
+                  <div class="rig">
+                    <a href="tel:+7 (7172) 64-50-00">+7 (7172) 64-50-00</a>
+                    <a href="tel:+7 (7272) 61-67-37">+7 (7272) 61-67-37</a>
+                    <a href="tel:+7 (7142) 53-35-33">+7 (7142) 53-35-33</a>
+                    <a href="tel:+7 (7143) 13-91-11">+7 (7143) 13-91-11</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li><button>Оставить заявку</button></li>
+        </ul>
+      </nav>
+      <button class="toggle-menu">
+        <span></span>
+      </button>
+      <div id="menu" class="">
+        <ul class="links">
+          <li><a href="#">Все туры</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Контакты</a></li>
+          <div class="dropdown">
+            <li onclick="mymFunction()" class="dropbtn2">Позвонить</li>
+              <div id="myDropdown2" class="dropdown-content2">
+                <div class="cont">
+                  <div class="str">
+                    <h3>г.Астана</h3>
+                    <a href="tel:+7 (7172) 64-50-00">+7 (7172) 64-50-00</a>
+                  </div>
+                  <div class="str">
+                    <h3>г.Алматы</h3>
+                    <a href="tel:+7 (7272) 61-67-37">+7 (7272) 61-67-37</a>
+                  </div>
+                  <div class="str">
+                    <h3>г.Костанай</h3>
+                    <a href="tel:+7 (7142) 53-35-33">+7 (7142) 53-35-33</a>
+                  </div>
+                  <div class="str">
+                    <h3>г.Рудный</h3>
+                    <a href="tel:+7 (7143) 13-91-11">+7 (7143) 13-91-11</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li><button>Оставить заявку</button></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="wrapper">
+        <input checked type=radio name="slider" id="slide1" />
+        <input type=radio name="slider" id="slide2" />
+        <input type=radio name="slider" id="slide3" />
+        <input type=radio name="slider" id="slide4" />
+        <input type=radio name="slider" id="slide5" />
+      
+        <div class="slider-wrapper">
+          <div class=inner>
+            <article>
+              <div class="info top-left">
+                <h3></h3></div>
+              <img src="/assets/slides/jungle.png" />
+            </article>
+      
+            <article>
+              <div class="info bottom-right">
+                <h3></h3></div>
+              <img src="/assets/slides/monutain.png" />
+            </article>
+      
+            <article>
+              <div class="info bottom-left">
+                <h3></h3></div>
+              <img src="/assets/slides/oae.png" />
+            </article>
+      
+            <article>
+              <div class="info top-right">
+                <h3></h3></div>
+              <img src="/assets/slides/sea.png" />
+            </article>
+      
+            <article>
+              <div class="info bottom-left">
+                <h3></h3></div>
+              <img src="/assets/slides/tailand.png" />
+            </article>
+          </div>
+          <!-- .inner -->
+        </div>
+        <!-- .slider-wrapper -->
+      
+        <div class="slider-prev-next-control">
+          <label for=slide1></label>
+          <label for=slide2></label>
+          <label for=slide3></label>
+          <label for=slide4></label>
+          <label for=slide5></label>
+        </div>
+        <!-- .slider-prev-next-control -->
+      
+        <div class="slider-dot-control">
+          <label for=slide1></label>
+          <label for=slide2></label>
+          <label for=slide3></label>
+          <label for=slide4></label>
+          <label for=slide5></label>
+        </div>
+        <!-- .slider-dot-control -->
+      </section>
+      <section class="search">
+        <h2>Поиск выгодного тура</h2>
+      </section>
+      <section class="popular">
+        <h2>ПОПУЛЯРНЫЕ НАПРАВЛЕНИЯ</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="/assets/popular/Turkey.png" alt="Турция" />
+            <p>Турция</p>
+          </div>
+          <div class="card">
+            <img src="/assets/popular/Vietnam.png" alt="Вьетнам" />
+            <p>Вьетнам</p>
+          </div>
+          <div class="card">
+            <img src="/assets/popular/OAE.png" alt="ОАЭ" />
+            <p>ОАЭ</p>
+          </div>
+          <div class="card">
+            <img src="/assets/popular/Egipet.png" alt="Египет" />
+            <p>Египет</p>
+          </div>
+          <div class="card">
+            <img src="/assets/popular/Tailand.png" alt="Тайланд" />
+            <p>Тайланд</p>
+          </div>
+          <div class="card">
+            <img src="/assets/popular/Gruziya.png" alt="Грузия" />
+            <p>Грузия</p>
+          </div>
+        </div>
+        <div class="button">
+          <button>Выбрать направление</button>
+        </div>
+      </section>
+      <section class="team">
+        <div class="text">
+          <div class="title">
+            <h2>НАДЕЖНАЯ КОМАНДА</h2>
+            <h3>
+              НАШИ СПЕЦИАЛИСТЫ ПОМОГУТ ВАМ ОСУЩЕСТВИТЬ ТО, ЧТО ВЫ ДАВНО ЗАДУМАЛИ
+            </h3>
+          </div>
+          <div class="arrows">
+          </div>
+        </div>
+        <div class="team-cards">
+          <div class="container">
+            <div class="product-slider">
+                <div class="product-slider__slider">
+                  <div class="product-slider__item">
+                    <img src="/assets/team/erkin.png" alt="Касымов Еркин" />
+                    <h5>Касымов Еркин</h5>
+                    <p>
+                      г. Костанай,<br />
+                      директор
+                    </p>
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/team/indira.png" alt="Хабирова Индира" />
+                    <h5>Хабирова Индира</h5>
+                    <p>
+                      г. Костанай,<br />
+                      менеджер по туризму
+                    </p>
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/team/indira2.png" alt="Изильбаева Индира" />
+                    <h5>Изильбаева Индира</h5>
+                    <p>
+                      г. Костанай,<br />
+                      старший менеджер по туризму
+                    </p>
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/team/ekaterina.png" alt="Моденко Екатерина" />
+                    <h5>Моденко Екатерина</h5>
+                    <p>
+                      г. Костанай,<br />
+                      менеджер по туризму
+                    </p>
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/team/elena.png" alt="Кондратенко Елена" />
+                    <h5>Кондратенко Елена</h5>
+                    <p>
+                      г. Астана,<br />
+                      менеджер по туризму
+                    </p>
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/team/kamila.png" alt="Симбаева Камила" />
+                    <h5>Симбаева Камила</h5>
+                    <p>
+                      г. Алматы,<br />
+                      директор филиала
+                    </p>
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/team/vera.png" alt="Мудрая Вера" />
+                    <h5>Мудрая Вера</h5>
+                    <p>
+                      г. Алматы,<br />
+                      менеджер по туризму
+                    </p>
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/team/marina.png" alt="Купцова Марина" />
+                    <h5>Купцова Марина</h5>
+                    <p>
+                      г. Алматы,<br />
+                      менеджер по туризму
+                    </p>
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/team/alexandra.png" alt="Рубанова Александра" />
+                    <h5>Рубанова Александра</h5>
+                    <p>
+                      г. Рудный,<br />
+                      менеджер по туризму
+                    </p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </section>
+      <section class="about">
+        <h2>НАШИ ДОСТИЖЕНИЯ<br />ГОВОРЯТ САМИ ЗА СЕБЯ</h2>
+        <div class="bg">
+          <div class="years">
+            <h3>17+</h3>
+            <p>ЛЕТ ОПЫТА</p>
+          </div>
+          <div class="clients">
+            <h3>10К</h3>
+            <p>ДОВОЛЬНЫХ КЛИЕНТОВ</p>
+          </div>
+          <div class="rate">
+            <h3>4.6</h3>
+            <p>РЕЙТИНГ НАШЕЙ КОМПАНИИ<br />(ПО ВЕРСИИ GOOGLE)</p>
+          </div>
+        </div>
+      </section>
+      <section class="prize">
+        <div class="text-prize">
+          <h2>
+            НАГРАДЫ<br />
+            ЗА УСПЕШНУЮ РАБОТУ
+          </h2>
+          <div class="arrows">
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </div>
+        <div class="prize-cards">
+          <div class="container">
+            <div class="product-slider">
+                <div class="product-slider__slider">
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 51.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 53.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 54.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 55.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 56.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 57.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 58.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 59.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 60.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 61.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 62.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 64.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 65.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 66.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 67.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 68.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 69.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 70.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 71.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 72.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 74.png" alt="Награда" />
+                  </div>
+                  <div class="product-slider__item">
+                    <img src="/assets/prize/Rectangle 77.png" alt="Награда" />
+                  </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </section>
+      <section class="requirments">
+        <h2>ОТЗЫВЫ КЛИЕНТОВ</h2>
+        <div class="table">
+          <div class="requirment">
+            <img src="/assets/requirments/Rectangle 78.png" alt="Турция" />
+            <div class="author">
+              <img
+                src="/assets/requirments/avatar/Ellipse 28.svg"
+                alt="Аватар"
+              />
+              <p>мария тютчева, алматы</p>
+            </div>
+            <p>
+              Турция - потрясающее место! Отдых был организован на высшем
+              уровне: красивые пляжи, увлекательные экскурсии, вкусная еда.
+              Незабвенный опыт, с удовольствием вернусь!
+            </p>
+          </div>
+          <div class="requirment">
+            <img src="/assets/requirments/Rectangle 78.png" alt="Турция" />
+            <div class="author">
+              <img
+                src="/assets/requirments/avatar/Ellipse 28.svg"
+                alt="Аватар"
+              />
+              <p>мария тютчева, алматы</p>
+            </div>
+            <p>
+              Турция - потрясающее место! Отдых был организован на высшем
+              уровне: красивые пляжи, увлекательные экскурсии, вкусная еда.
+              Незабвенный опыт, с удовольствием вернусь!
+            </p>
+          </div>
+          <div class="requirment">
+            <img src="/assets/requirments/Rectangle 78.png" alt="Турция" />
+            <div class="author">
+              <img
+                src="/assets/requirments/avatar/Ellipse 28.svg"
+                alt="Аватар"
+              />
+              <p>мария тютчева, алматы</p>
+            </div>
+            <p>
+              Турция - потрясающее место! Отдых был организован на высшем
+              уровне: красивые пляжи, увлекательные экскурсии, вкусная еда.
+              Незабвенный опыт, с удовольствием вернусь!
+            </p>
+          </div>
+          <div class="requirment">
+            <img src="/assets/requirments/Rectangle 78.png" alt="Турция" />
+            <div class="author">
+              <img
+                src="/assets/requirments/avatar/Ellipse 28.svg"
+                alt="Аватар"
+              />
+              <p>мария тютчева, алматы</p>
+            </div>
+            <p>
+              Турция - потрясающее место! Отдых был организован на высшем
+              уровне: красивые пляжи, увлекательные экскурсии, вкусная еда.
+              Незабвенный опыт, с удовольствием вернусь!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <h2>Остались вопросы?</h2>
+        <h3>
+          Заполните форму ниже, и мы<br />
+          перезвоним Вам в ближайшее время.
+        </h3>
+        <div class="forma">
+          <input type="text" name="name" id="f" placeholder="Ваше имя" />
+          <input type="tel" name="tel" id="f" placeholder="Номер телефона" />
+          <button>Оставить заявку</button>
+        </div>
+      </section>
+      <footer>
+        <h2>Адреса и номера:</h2>
+        <div class="inform">
+          <div class="info-left">
+            <div class="top">
+              <h5>г. Костанай</h5>
+              <p>
+                пр.Абая, д.166 (напротив ТРЦ MART)<br /><br />Туризм: будние дни
+                с 10.00-19.00, без обеда<br />
+                суббота с 11.00 до 16.00 без обеда<br />
+                воскресенье - выходной<br /><br />
+                Авиа и ж/д: будние дни с 10.00-19.00, без обеда<br />
+                суббота с 12.00-17.00 без обеда<br />
+                воскресенье - выходной
+              </p>
+              <a href="tel:+7 (7142) 533 533">+7 (7142) 533 533</a>
+              <a href="tel:+7 (7142) 39 00 00">+7 (7142) 39 00 00</a>
+              <a href="" class="inst">
+                <img
+                  src="/assets/footer/instagram/Rectangle 46.svg"
+                  alt="instagram"
+                />
+                <p>lavkastran</p>
+              </a>
+            </div>
+            <div class="bottom">
+              <h5>г. Астана</h5>
+              <p>
+                “7 континент” 8-й этаж, офис 801 “Северное сияние” 2-й этаж<br /><br />
+                Будние дни с 10.00-19.00, обед с 13.00-14.00,<br />
+                суббота с 11.00 до 16.00 без перерыва,<br />
+                воскресенье - выходной
+              </p>
+              <a href="tel:+7 (7172) 64-50-00">+7 (7172) 64-50-00</a>
+              <a href="tel:+7 (7172) 47-59-00">+7 (7172) 47-59-00</a>
+              <a href="" class="inst">
+                <img
+                  src="/assets/footer/instagram/Rectangle 46.svg"
+                  alt="instagram"
+                />
+                <p>lavkastran_astana</p>
+              </a>
+            </div>
+          </div>
+          <div class="info-right">
+            <div class="top">
+              <h5>г. Алматы</h5>
+              <p>
+                ул. Желтоксан, 117, пом. 9<br /><br />
+                Будние дни с 10.00-19.00, обед с 13.00-14.00,<br />
+                суббота с 11.00 до 16.00 без перерыва,<br />
+                воскресенье - выходной
+              </p>
+              <a href="tel:+7 (727) 364-60-60">+7 (727) 364-60-60</a>
+              <a href="tel:+7 (7272) 616-737">+7 (7272) 616-737</a>
+              <a href="" class="inst">
+                <img
+                  src="/assets/footer/instagram/Rectangle 46.svg"
+                  alt="instagram"
+                />
+                <p>teztour_lavkastran_almaty</p>
+              </a>
+            </div>
+            <div class="bottom">
+              <h5>г. Рудный</h5>
+              <p>
+                ул. Космонавтов, дом № 4 (за акиматом)<br /><br />
+                Будние дни с 10.00-19.00, обед с 13.00-14.00,<br />
+                суббота с 11.00 до 16.00 без перерыва,<br />
+                воскресенье - выходной
+              </p>
+              <a href="tel:+7 (71431) 39-111">+7 (71431) 39-111</a>
+              <a href="tel:+7 747 799 3 999">+7 747 799 3 999</a>
+              <a href="" class="inst">
+                <img
+                  src="/assets/footer/instagram/Rectangle 46.svg"
+                  alt="instagram"
+                />
+                <p>lavkastran</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="control">
+          <h5>Контроль качества</h5>
+          <p>По вопросам контроля качества обслуживания:</p>
+          <div class="number">
+            <a href="tel:+7(771)089-07-67">+7(771)089-07-67</a>
+            <p>(в будние дни с 9:00 до 18:00)</p>
+          </div>
+          <div class="icon">
+            <a href=""
+              ><img
+                src="/assets/footer/telegram/Rectangle 46.svg"
+                alt="Telegram"
+            /></a>
+            <a href=""
+              ><img
+                src="/assets/footer/whats app/Rectangle 46.svg"
+                alt="Whats App"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="/script.js"></script>
+    <script>
+$(".product-slider__slider").slick({
+    infinite: false,
+    nextArrow: '<button type="button" class="slick-next">&rarr;</button>',
+    prevArrow: '<button type="button" class="slick-prev">&larr;</button>',
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    touchThreshold: 10,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 650,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 475,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
+   </script>
+   <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+       <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function mymFunction() {
+            document.getElementById("myDropdown2").classList.toggle("show2");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn2')) {
+        
+            var dropdowns = document.getElementsByClassName("dropdown-content2");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show2')) {
+                openDropdown.classList.remove('show2');
+              }
+            }
+          }
+        }
+        </script>
+  </body>
+</html>
